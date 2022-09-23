@@ -24,7 +24,7 @@ can start building cools apps as quickly as possible.
 ##### To run all tests just use the command:
     `/project/path$ ./vendor/bin/phpunit --testdox`
     
-    PHPUnit 7.3.5 by Sebastian Bergmann and contributors.
+    PHPUnit 7.3.5 by Hasan Hajjar.
     
     Feature\Category
      ✔ Can visit categories index
