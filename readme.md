@@ -44,7 +44,7 @@ can start building cools apps as quickly as possible.
 
 #### Installation
 
-- git clone https://github.com/Bcryp7/sales-app.git
+- git clone https://github.com/Eng-Hasan-Hajjar/Laravel-Sales-App.git
 - composer install
 - npm install
 - cp .env.example .env
