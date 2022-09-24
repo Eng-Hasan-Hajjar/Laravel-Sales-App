@@ -1,5 +1,6 @@
 <?php
 
+
 Route::get('/categories', 'Api\ApiCategoryController@index');
 Route::get('/categories/filters', 'Api\ApiCategoryController@getActiveCategories');
 Route::post('/categories', 'Api\ApiCategoryController@store');

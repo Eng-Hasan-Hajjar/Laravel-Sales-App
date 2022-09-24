@@ -86,7 +86,7 @@
 <footer class="app-footer">
     <span>
         <a href="https://github.com/Eng-Hasan-Hajjar/Laravel-Sales-App" target="_blank">
-            Hajjar
+                 Eng-Hasan-Hajjar
         </a>
         {{ date('Y') }}
     </span>
