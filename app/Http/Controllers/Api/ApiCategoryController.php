@@ -16,6 +16,7 @@ class ApiCategoryController extends Controller
         /** Uncomment if don't want to have api routes available */
         #if((! request()->ajax())) return redirect('/');
 
+        
         $category = new Category();
 
         $categoryData = $category->searching();
