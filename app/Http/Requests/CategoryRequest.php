@@ -13,7 +13,9 @@ class CategoryRequest extends FormRequest
      */
     public function authorize()
     {
+
         return true;
+
     }
 
     /**
@@ -23,9 +25,11 @@ class CategoryRequest extends FormRequest
      */
     public function rules()
     {
+
         return [
             'name' => 'required|string|unique:categories,name',
             'description' => 'sometimes|string|max:255'
         ];
+        
     }
 }

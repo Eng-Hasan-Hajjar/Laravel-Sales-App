@@ -33,6 +33,7 @@ class ApiArticleController extends Controller
 
     public function store(ArticleRequest $request)
     {
+        
         $article = new Article($request->validated());
         $article->status = 1;
 
