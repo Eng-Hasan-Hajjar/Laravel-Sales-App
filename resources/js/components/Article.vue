@@ -42,6 +42,7 @@
                                        class="form-control"
                                        placeholder="Search...">
 
+
                                 <button type="submit"
                                         @click="articleList(1, search, criteria)"
                                         class="btn btn-primary">
@@ -57,6 +58,7 @@
                     <table class="table table-bordered table-striped table-sm">
                         <thead>
                         <tr>
+
                             <th>Options</th>
                             <th>Code</th>
                             <th>Name</th>
@@ -65,6 +67,7 @@
                             <th>Stock</th>
                             <th>Description</th>
                             <th>Status</th>
+
                         </tr>
                         </thead>
                         <tbody>
@@ -72,6 +75,7 @@
                         <tr v-for="article in articles"
                             :key="article.id">
                             <td>
+                                
                                 <button @click="showModal('update', article)"
                                         class="btn btn-warning btn-sm">
                                     <i class="icon-pencil"></i>
