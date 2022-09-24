@@ -75,7 +75,7 @@
                         <tr v-for="article in articles"
                             :key="article.id">
                             <td>
-                                
+
                                 <button @click="showModal('update', article)"
                                         class="btn btn-warning btn-sm">
                                     <i class="icon-pencil"></i>
@@ -97,12 +97,14 @@
                                 </button>
 
                             </td>
+
                             <td v-text="article.code"></td>
                             <td v-text="article.name"></td>
                             <td v-text="article.category"></td>
                             <td v-text="article.price"></td>
                             <td v-text="article.stock"></td>
                             <td v-text="article.description"></td>
+
                             <td>
                                 <div>
 
@@ -313,6 +315,7 @@
 
                                 <div v-for="error in errorMessages"
                                      :key="error">
+
                                     <ul>
                                         <li v-text="error" class="pull-left"></li>
                                     </ul>
@@ -323,6 +326,7 @@
 
                     </div>
                     <div class="modal-footer">
+
                         <button @click="closeModal()"
                                 class="btn btn-secondary">
                             Close
@@ -345,6 +349,7 @@
 </template>
 
 <script>
+
     import VueBarcode from 'vue-barcode'
 
     export default {
@@ -400,6 +405,7 @@
                 }
 
                 if (action === 'update') {
+
 
                     this.actionType = 'Update'
                     this.modal = 1
@@ -481,6 +487,7 @@
                 }
 
             },
+            
             toggleStatus(article) {
 
                 let action = article.status ? 'deactivate it!' : 'activate it!'
