@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    
     use isSearching, hasPagination;
+
 
     protected $fillable = [
         'category_id',
@@ -27,6 +29,8 @@ class Article extends Model
     }
 
     public function toggleStatus() {
+
         $this->status ? $this->status = 0 : $this->status = 1;
+
     }
 }

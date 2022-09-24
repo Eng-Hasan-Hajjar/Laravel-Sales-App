@@ -10,8 +10,10 @@ class Category extends Model
 {
     use isSearching, hasPagination;
 
+
     protected $fillable = ['name', 'status', 'description'];
 
+    
     public function articles() {
 
         return $this->hasMany(Article::class);
