@@ -23,6 +23,7 @@
                 <div class="card-body">
 
                     <!-- Search -->
+
                     <div class="form-group row">
                         <div class="col-md-6">
                             <div class="input-group">
@@ -53,6 +54,7 @@
 
 
                     <table class="table table-bordered table-striped table-sm">
+
                         <thead>
                         <tr>
                             <th>Options</th>
@@ -61,6 +63,7 @@
                             <th>Status</th>
                         </tr>
                         </thead>
+
                         <tbody>
 
                         <tr v-for="category in categories"
@@ -179,6 +182,7 @@
              aria-labelledby="myModalLabel"
              style="display: none;"
              aria-hidden="true">
+
             <div class="modal-dialog modal-primary modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -331,6 +335,7 @@
 
             },
             createOrUpdate(actionType) {
+
 
                 if (actionType === 'Save') {
 
@@ -554,6 +559,7 @@
 
     .modal-content {
 
+        
         width: 100% !important;
         position: absolute !important;
 
