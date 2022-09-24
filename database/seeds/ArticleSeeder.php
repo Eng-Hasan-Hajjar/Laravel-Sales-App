@@ -14,6 +14,7 @@ class ArticleSeeder extends Seeder
 
         $articles = [
 
+
             [
                 'category_id' => 1,
                 'code' => '12345',
@@ -61,6 +62,7 @@ class ArticleSeeder extends Seeder
 
         ];
 
+        
         App\Article::insert($articles);
 
     }
