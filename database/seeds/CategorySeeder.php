@@ -9,8 +9,10 @@ class CategorySeeder extends Seeder
      *
      * @return void
      */
+    
     public function run()
     {
+
 
         $categories = [
 
@@ -36,6 +38,7 @@ class CategorySeeder extends Seeder
             ]
 
         ];
+
 
         App\Category::insert($categories);
 

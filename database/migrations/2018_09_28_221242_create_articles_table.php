@@ -14,6 +14,7 @@ class CreateArticlesTable extends Migration
     public function up()
     {
         Schema::create('articles', function (Blueprint $table) {
+
             $table->increments('id');
             $table->integer('category_id')->unsigned();
             $table->string('code',  50)->nullable();
@@ -26,6 +27,7 @@ class CreateArticlesTable extends Migration
 
             $table->foreign('category_id')->references('id')->on('categories');
         });
+        
     }
 
     /**
